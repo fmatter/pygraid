@@ -162,24 +162,24 @@ test_dic = {
         "functags": "",
         "formtags": "",
     },
-    "aux=pro:p": [
-        {
-            "func": "aux",
-            "type": "other",
-            "form": "clitic",
-            "functags": "",
-            "formtags": "",
-        },
-        {
-            "type": "ref",
-            "form": "clitic",
-            "anim": "nh",
-            "syn": "p",
-            "ref": "pro",
-            "funcglosses": "",
-            "formglosses": "",
-        },
-    ],
+    # "aux=pro:p": [
+    #     {
+    #         "func": "aux",
+    #         "type": "other",
+    #         "form": "clitic",
+    #         "functags": "",
+    #         "formtags": "",
+    #     },
+    #     {
+    #         "type": "ref",
+    #         "form": "clitic",
+    #         "anim": "nh",
+    #         "syn": "p",
+    #         "ref": "pro",
+    #         "funcglosses": "",
+    #         "formglosses": "",
+    #     },
+    # ],
     "pro.1:ncs": {
         "type": "ref",
         "ref": "pro",

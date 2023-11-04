@@ -1,8 +1,9 @@
 """Top-level package for pygraid."""
+import csv
 import logging
 import re
+
 import importlib_resources
-import csv
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
@@ -115,6 +116,7 @@ def is_empty(ann):
     if is_ref(ann) and "0" in ann:
         return True
     return False
+
 
 def escape(l):
     """Escape a list"""
@@ -263,7 +265,10 @@ def resolve_pred(hit, bound="free"):
     print(kind)
     exit()
 
+
 boundary_dict = {"##": "main_clause", "#": "subr_clause", "%": "subr_end"}
+
+
 def resolve_boundary(hit):
     good = False
     for key, value in boundary_dict.items():
@@ -320,6 +325,7 @@ def is_referential(ann):
             return True
     return False
 
+
 def is_pred(ann):
     if ":pred" in ann or ":predex" in ann:
         return True
@@ -366,11 +372,7 @@ def parse_graid_item(ann):
             else:
                 funcglosses = ""
             item = add_seps(item, items, i)
-            item_dict = {
-                "formtags": glosses,
-                "functags": funcglosses,
-                "form": "free"
-            }
+            item_dict = {"formtags": glosses, "functags": funcglosses, "form": "free"}
             if "adp" in item:
                 parsed_items.append(
                     {
@@ -453,6 +455,7 @@ def parse_annotation(ann, sep=" ", mode="linear"):
     if mode == "linear":
         return parsed["pre"] + parsed["data"] + parsed["post"]
     return parsed
+
 
 def to_string(ann):
     if not ann:
