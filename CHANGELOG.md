@@ -10,5 +10,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release
 
-[Unreleased]: https://github.com/fmatter/pygraid/compare/v0.0.1...HEAD
-[0.1.0]: https://github.com/fmatter/pygraid/commit/insert_this_by_hand
+[Unreleased]: https://github.com/fmatter/pygraid/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/fmatter/pygraid/commit/66f20d1a7b4bd805249608bb905c2c474a43c99c
